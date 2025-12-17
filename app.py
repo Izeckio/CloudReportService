@@ -96,7 +96,7 @@ def calculate_probability(valid_params): #Executed the simulator based off valid
         for _ in range(num_runs):
             trial_result = random.randint(1, 6)
 
-            #Checks the target card is valid
+            #Checks the target outcome is valid
             if trial_result == target_outcome:
                 success_count += 1
 
