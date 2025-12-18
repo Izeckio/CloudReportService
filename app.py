@@ -15,8 +15,8 @@ standard_deck = [f"{rank} of {suit}" for suit in suits for rank in ranks]
 #Initialise the flask instance
 app = Flask(__name__)
 
-def input_params(data):   # Validates incoming user requests
-                          # and raises any invalid or missing data
+def input_params(data):   #Validates incoming user requests
+                          #and raises any invalid or missing data
 
     if not data:
         raise ValueError("Request body must contain variables")
