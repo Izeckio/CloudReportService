@@ -36,7 +36,7 @@ def send_request(event_type, num_runs, odds_params):
         print(f"Error Message: {error_data.get('error', 'Unknown 400 error.')}")
         
     else:
-        # Other Server Errors (500)
+        #Other Server Errors (500)
         print(f"\n SERVER ERROR (HTTP {response.status_code})")
         print(f"Response Text: {response.text}")
 
